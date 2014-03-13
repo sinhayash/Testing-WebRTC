@@ -83,7 +83,8 @@ function getMedia(event) {
             audioRecorder = new Recorder(audioInput);
             setVideo();
         }, function(e) {
-            alert('Error');
+            alert('Error'+e);
+            console.log(e)
         });
     } else {
         console.log('getUserMedia() not supported in this browser.');
