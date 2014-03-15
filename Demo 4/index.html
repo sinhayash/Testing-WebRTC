@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Record and Play Simple Messages</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	Records video as GIF and audio using WebAudioAPI and recorder.js
+	<section>
+	<div>
+		<video autoplay height="240" width="320"></video><br />
+		<button id="camera">GetUserMedia</button>
+	</div>
+	<div id="recordedDiv">
+		<button id="record" disabled>Record</button>
+		<button id="stop" disabled>Stop</button><br />
+		<img id="outGIF" src="" />
+	</div>
+	</section>
+	<script type="text/javascript">
+		window.AudioContext = window.AudioContext || window.webkitAudioContext;
+		var audioContext = new AudioContext;
+	</script>
+	<script type="text/javascript" src="./js/RecordRTC.js"></script>
+	<!-- 
+	<script type="text/javascript" type="javascript" src="./js/whammy.min.js" ></script>-->
+	<script type="text/javascript" type="javascript" src="./js/recorder.js"></script>
+	<script type="text/javascript" type="javascript" src="./js/script.js"></script>
+</body>
+</html>
